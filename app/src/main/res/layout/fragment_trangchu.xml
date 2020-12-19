@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trangchu"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="70dp">
+       <ImageView
+           android:layout_weight="1"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_gravity="center"
+           android:src="@drawable/dangnhap"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Tên Đăng Nhập"
+           android:textSize="25dp"
+
+          android:layout_gravity="center"
+           android:layout_weight="1"/>
+       <ImageView
+           android:layout_width="50dp"
+           android:layout_gravity="center"
+           android:layout_height="50dp"
+           android:layout_weight="1"
+           android:src="@drawable/ic_chuongbao"/>
+   </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:background="#B3BEFB"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quetma_124"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="5dp"
+                    android:id="@+id/quetma"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+
+                    android:src="@drawable/quetma1"/>
+                <TextView
+                    android:layout_below="@+id/quetma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tích Điểm"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dathang_124"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:id="@+id/dathang"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:src="@drawable/shipper"/>
+                <TextView
+                    android:layout_below="@+id/dathang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đặt Hàng"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/coupon_124"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/CouPon"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+
+                    android:src="@drawable/coupon"/>
+                <TextView
+                    android:layout_below="@+id/CouPon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CouPon"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/rewars_124"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="5dp"
+                    android:id="@+id/Rewards"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/rewars"/>
+                <TextView
+                    android:layout_below="@+id/Rewards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rewards"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:id="@+id/progressBar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listview"
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
